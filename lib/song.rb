@@ -38,6 +38,6 @@ class Song
   def self.artist_count
     artists_hash = Hash.new(0)
     artists_hash.tap { |hash| @@artists.each { |artist| hash[artist] += 1 } }
-    pry
+    binding.pry
   end
 end
